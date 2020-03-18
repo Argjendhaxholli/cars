@@ -9,6 +9,11 @@ import { HomePage } from '../HomePage';
 import { LoginPage } from '../LoginPage';
 import { RegisterPage } from '../RegisterPage';
 
+import ItemList from '../_components/items/ItemList';
+import ItemCreate from '../_components/items/ItemCreate';
+import ItemEdit from '../_components/items/ItemEdit';
+import ItemsFatura from '../_components/items/ItemsFatura';
+
 class App extends React.Component {
     constructor(props) {
         super(props);
@@ -34,6 +39,9 @@ class App extends React.Component {
                                 <Route path="/login" component={LoginPage} />
                                 <Route path="/register" component={RegisterPage} />
                                 <Redirect from="*" to="/" />
+                                <Route path="/items/new" exact component={ItemCreate} />
+                                <Route path="/items/edit" exact component={ItemEdit} />
+                                <Route path="/items/fatura" exact component={ItemsFatura} />
                             </Switch>
                         </Router>
                     </div>
