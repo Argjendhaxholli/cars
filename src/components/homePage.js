@@ -31,8 +31,6 @@ class HomePage extends Component {
             
         </header>
 
-      
-
         )
     }
 }
