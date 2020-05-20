@@ -1,13 +1,15 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import HomePage from '../components/homePage';
 
 class App extends Component {
   render() {
     return (
-      <div>
-        <h3>User Authentication System</h3>
-        {this.props.children}
-      </div>
+      <HomePage/>
+      // <div>
+      //   <h3>User Authentication System</h3>
+      //   {this.props.children}
+      // </div>
     );
   }
 }
